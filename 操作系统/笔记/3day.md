@@ -42,4 +42,7 @@ P3 =
 
 第一题：Need = Max-Allocation
 第二题：计算出每一个的need然后判断need是否<=Available，**注意**是每一项都要<=才可以
-第三题：如果有一个的need<=Available ，那么 Available=Available+该进程的Allocation，再将新的Available与剩下进程的needj x
+第三题：如果有一个的need<=Available ，那么 Available=Available+该进程的Allocation，再将新的Available与剩下进程的need进行比较，以此往复，得出安全序列
+第四题：如果能够找出一个安全序列，那么系统就是安全的，但是安全序列不是唯一的，可以存在多个
+
+第二leiu
