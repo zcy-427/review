@@ -7,11 +7,11 @@
 **第一类题**
 系统有 3 个进程 P1、P2、P3，两类资源 A、B。
 
-|进程|Max(A,B)|Allocation(A,B)|
-|---|---|---|
-|P1|(4,3)|(1,1)|
-|P2|(3,2)|(1,0)|
-|P3|(5,3)|(2,1)|
+| 进程  | Max(A,B) | Allocation(A,B) |
+| --- | -------- | --------------- |
+| P1  | (4,3)    | (1,1)           |
+| P2  | (3,2)    | (1,0)           |
+| P3  | (5,3)    | (2,1)           |
 
 当前：
 
@@ -42,4 +42,4 @@ P3 =
 
 第一题：Need = Max-Allocation
 第二题：计算出每一个的need然后判断need是否<=Available，**注意**是每一项都要<=才可以
-第三题：如果有一个的need<=Available ，那么就将Availableg
+第三题：如果有一个的need<=Available ，那么 Available=Available+该进程的Allocation，再将新的Available与剩下进程的needj x
