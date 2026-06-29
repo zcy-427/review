@@ -34,6 +34,8 @@ P3 =
 4. 系统是否安全？
 ```
 
-> [!NOTE] Title
+> [!NOTE] 注
+> 这里的Available可以计算的，比如说![](assets/3day/file-20260629112240504.png)
+> 
 
 
