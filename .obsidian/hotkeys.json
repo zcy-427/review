@@ -8,6 +8,15 @@
       "key": "M"
     }
   ],
+  "editor:insert-callout": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
+  ],
   "editor:insert-codeblock": [
     {
       "modifiers": [
