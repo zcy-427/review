@@ -35,7 +35,9 @@ P3 =
 ```
 
 > [!NOTE] 注
-> 这里的Available可以计算的，比如说![](assets/3day/file-20260629112240504.png)
-> 
+> 这里的Available可以计算的，比如说这道题
+> ![](assets/3day/file-20260629112240504.png)
+> 我们可以通过总的资源数减去已占有的资源数就是Available
+> 放在z dao
 
 
