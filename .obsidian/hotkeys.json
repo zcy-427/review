@@ -73,5 +73,13 @@
       ],
       "key": "6"
     }
+  ],
+  "editor:insert-horizontal-rule": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "-"
+    }
   ]
 }
