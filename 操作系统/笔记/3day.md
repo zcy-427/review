@@ -41,4 +41,4 @@ P3 =
 > 放在这道题里面就是：Available =（3,14,12,12)-(p1+p2+p3+p4+p5)的已占有资源数
 
 第一题：Need = Max-Allocation
-
+第二题：计算出每一个的need然后判断need是否<=Available，注意是每一项都要
