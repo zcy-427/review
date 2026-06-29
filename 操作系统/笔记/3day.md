@@ -45,4 +45,19 @@ P3 =
 第三题：如果有一个的need<=Available ，那么 Available=Available+该进程的Allocation，再将新的Available与剩下进程的need进行比较，以此往复，得出安全序列
 第四题：如果能够找出一个安全序列，那么系统就是安全的，但是安全序列不是唯一的，可以存在多个
 
-第二leiu
+**第二类题**
+题目一般会给你：
+
+- `Available`
+- `Max`
+- `Allocation`
+- `Need`
+- 某个进程 `Pi` 提出请求 `Requesti`
+
+然后问：
+
+```text
+该请求能否立即分配？
+```
+
+
