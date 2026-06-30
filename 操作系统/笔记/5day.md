@@ -150,4 +150,6 @@
 
 
 > [!NOTE] 注
-> FIFO
+> FIFO可能出现Belady异常
+
+
