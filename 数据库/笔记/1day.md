@@ -109,10 +109,14 @@ Student ⋈Student.Sno=SC.Sno SC
 π 要查的列 ( σ 条件 ( 表1 ⋈ 表2 ) )
 ```
 
-例：
+**例**：
 Student(Sno, Sname, Dept)  
 SC(Sno, Cno, Grade)
 
 查询：
 
 > 选修了课程 C1 的学生姓名。
+
+```text
+πSname(σCno='C1'(Student ⋈Student.Sno=SC.Sno SC))
+```
