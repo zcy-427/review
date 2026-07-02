@@ -228,4 +228,56 @@ WHERE 外层列 NOT IN (
 );
 ```
 
+### 模板
+#### 模板 1：选了某课程的学生姓名
+
+```sql
+SELECT Sname
+FROM Student
+WHERE Sno IN (
+    SELECT Sno
+    FROM SC
+    WHERE Cno = 'C1'
+);
+```
+
+---
+
+#### 模板 2：没选课的学生姓名
+
+```sql
+SELECT Sname
+FROM Student
+WHERE Sno NOT IN (
+    SELECT Sno
+    FROM SC
+);
+```
+
+---
+
+#### 模板 3：没选某课程的学生姓名
+
+```sql
+SELECT Sname
+FROM Student
+WHERE Sno NOT IN (
+    SELECT Sno
+    FROM SC
+    WHERE Cno = 'C1'
+);
+```
+
+---
+
+#### 模板 4：成绩高于平均成绩
+
+```sql
+SELECT *
+FROM SC
+WHERE Grade > (
+    SELECT AVG(Grade)
+    FROM SC
+);
+```
 
