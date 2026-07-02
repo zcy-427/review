@@ -1,3 +1,7 @@
 1. SELECT Sname FROM Students WHERE Sno IN (SELECT Sno FROM SC WHERE Cno = 'C1')
 
 2. SELECT Sname FROM Student WHERE Sno NOT IN (SELECT Sno FROM SC )
+
+3. SELECT Sname FROM Student WHERE Sno NOT IN (SELECT Sno FROM SC WHERE Cno = 'C1')
+
+4. SELECT Sname,Cno,Grade FROM SC WHERE Grade > 
