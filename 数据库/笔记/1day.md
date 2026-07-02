@@ -120,3 +120,4 @@ SC(Sno, Cno, Grade)
 ```text
 πSname(σCno='C1'(Student ⋈Student.Sno=SC.Sno SC))
 ```
+
