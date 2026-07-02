@@ -4,4 +4,6 @@
 
 3. SELECT Sno,Cno,Grade FROM SC WHERE Grade>=60
 
-4. SELECT SC.Sname From SC,Student WHERE SC.Sno=Student.Sno AND SC.Grade>=60
+4. SELECT Student.Sname From SC,Student WHERE SC.Sno=Student.Sno AND SC.Cno='C2'
+
+5. SELECT Student.Sname,SC.Grade FROM SC,Student WHERE SC.Sno=Student.Sno AND SC.Cno='C2' AND SC.Grade>=60
