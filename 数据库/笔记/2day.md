@@ -157,5 +157,12 @@ FROM SC
 GROUP BY Cno
 HAVING AVG(Grade) >= 80;
 ```
+---
+## WHRER和GROUP BY的区别
 
-WHRER
+|项目|WHERE|HAVING|
+|---|---|---|
+|作用对象|表中的原始记录|分组后的结果|
+|位置|GROUP BY 前|GROUP BY 后|
+|能否直接用聚合函数|一般不能|可以|
+|例子|`WHERE Grade >= 60`|`HAVING AVG(Grade) >= 80`|
