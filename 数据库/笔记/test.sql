@@ -4,4 +4,6 @@
 
 3. SELECT Sname FROM Student WHERE Sno NOT IN (SELECT Sno FROM SC WHERE Cno = 'C1')
 
-4. SELECT Sname,Cno,Grade FROM SC WHERE Grade > 
+4. SELECT Sname,Cno,Grade FROM SC WHERE Grade > (SELECT AVG(Grade) FROM SC)
+
+5. SELECT Sname FROM Students WHERE Sno IN (SELECT Sno FROM SC WHERE  (SELECT Cno FROM Course WHERE Cname = '数据库'))
