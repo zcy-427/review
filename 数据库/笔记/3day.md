@@ -103,3 +103,5 @@ Card(CardNo, Balance)
 ```text
 Student.CardNo 是外键，引用 Card.CardNo
 ```
+
+# 函数依赖
