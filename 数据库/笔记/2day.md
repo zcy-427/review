@@ -118,3 +118,44 @@ WHERE 其他条件;
 |MAX(列名)|求最大值|
 |MIN(列名)|求最小值|
 
+## GROUP BY
+
+作用：**按某列分组，然后对每组统计。**
+
+题目：
+
+> 查询每门课程的平均成绩。
+
+SQL：
+
+```sql
+SELECT Cno, AVG(Grade)
+FROM SC
+GROUP BY Cno;
+```
+
+意思是：
+
+```text
+按 Cno 分组，每个 Cno 算一个 AVG(Grade)
+```
+
+---
+## HAVING
+
+作用：**对分组后的结果进行筛选。**
+
+题目：
+
+> 查询平均成绩大于等于 80 的课程号。
+
+SQL：
+
+```sql
+SELECT Cno
+FROM SC
+GROUP BY Cno
+HAVING AVG(Grade) >= 80;
+```
+
+WHRER
