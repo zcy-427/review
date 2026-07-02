@@ -1,1 +1,3 @@
-1. SELECT Sname FROM Students WHERE Age > 20;
+1. SELECT Sname FROM Students WHERE Sno IN (SELECT Sno FROM SC WHERE Cno = 'C1')
+
+2. SELECT Sname FROM Student WHERE Sno NOT IN (SELECT Sno FROM SC )
