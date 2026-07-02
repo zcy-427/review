@@ -4,4 +4,6 @@
 
 3. SELECT Sno,AVG(Grade) FROM SC GROUP BY Sno
 
-4. 
+4. SELECT Sno FROM SC GROUP BY Sno HAVING AVG(Grade) >= 90
+
+5. SELECT Dept,COUNT(*) FROM Student GROUP BY Dept
