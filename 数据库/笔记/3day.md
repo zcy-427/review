@@ -263,3 +263,45 @@ Sname、Cname、Grade 是非主属性。
 组合键，看部分；
 非主属性不能只依赖组合键的一部分。
 ```
+
+关系：
+
+```text
+R(Sno, Cno, Sname, Cname, Grade)
+```
+
+含义：
+
+```text
+学生选课信息。
+```
+
+候选键：
+
+```text
+(Sno, Cno)
+```
+
+函数依赖：
+
+```text
+Sno → Sname
+Cno → Cname
+(Sno, Cno) → Grade
+```
+
+问题：
+
+```text
+Sname 只依赖 Sno，不依赖完整的 (Sno, Cno)
+Cname 只依赖 Cno，不依赖完整的 (Sno, Cno)
+```
+
+所以存在部分依赖，不满足 2NF。
+
+### 3NF
+3NF 解决的是：
+
+> **消除非主属性对候选键的传递函数依赖。**
+
+
