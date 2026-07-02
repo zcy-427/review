@@ -1,0 +1,2 @@
+SELECT Sno,Sname FROM student
+
