@@ -245,3 +245,12 @@ R(Sno, Cno, Sname, Cname, Grade)
 Sname、Cname、Grade 是非主属性。
 ```
 
+### 1NF
+1NF 解决的是：
+
+> **表中每个属性值必须是不可再分的原子值。**
+
+```text
+属性值不能是集合、数组、重复组。
+```
+
