@@ -198,4 +198,15 @@ HAVING 聚合函数(列) 条件;
 ```
 
 ---
-SQL-嵌套查询IN
+# SQL-嵌套查询IN
+
+## 核心模板
+
+```sql
+SELECT 外层要查的列
+FROM 外层表
+WHERE 外层列 IN (
+    SELECT 内层列
+    FROM 内层表
+    WHERE 内层
+```
