@@ -1,1 +1,3 @@
-1. SELECT
+1. SELECT Cno,COUNT(*) FROM SC GROUP BY Cno
+
+2. 
