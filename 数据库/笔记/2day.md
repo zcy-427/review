@@ -103,3 +103,5 @@ FROM 表1
 JOIN 表2 ON 表1.公共列 = 表2.公共列
 WHERE 其他条件;
 ```
+
+SQL-聚合函数，GROUP BY，HAv
