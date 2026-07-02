@@ -304,4 +304,36 @@ Cname 只依赖 Cno，不依赖完整的 (Sno, Cno)
 
 > **消除非主属性对候选键的传递函数依赖。**
 
+关系：
 
+```text
+Student(Sno, Sname, Dept, Dname)
+```
+
+函数依赖：
+
+```text
+Sno → Sname, Dept
+Dept → Dname
+```
+
+因为：
+
+```text
+Sno → Dept
+Dept → Dname
+```
+
+所以：
+
+```text
+Sno → Dname
+```
+
+这是通过 Dept 间接决定 Dname，叫传递依赖。
+
+问题：
+
+```text
+Dname 不应该放在 Student 表里，应该单独放 Department 表。
+```
