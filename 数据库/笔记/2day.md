@@ -340,4 +340,33 @@ WHERE NOT EXISTS (
 
 ### 例题3：查询选修了全部课程的学生姓名
 
-	
+“学生 S 选修了全部课程”等价于：
+
+```text
+不存在这样一门课程 C：
+    学生 S 没有选修 C。
+```
+
+也就是双重否定：
+
+```text
+没有一门课是他没选的
+= 他选了全部课程
+```
+
+
+```SQL
+SELECT Sname
+FROM Student
+WHERE NOT EXISTS (
+    SELECT *
+    FROM Course
+    WHERE NOT EXISTS (
+        SELECT *
+        FROM SC
+        WHERE SC.Sno = Student.Sno
+          AND SC.Cno = Course.Cno
+    )
+);
+```
+
