@@ -6,4 +6,4 @@
 
 4. SELECT Student.Sname From SC,Student WHERE SC.Sno=Student.Sno AND SC.Cno='C2'
 
-5. SELECT Student.Sname,SC.Grade FROM SC,Student WHERE SC.Sno=Student.Sno AND SC.Cno='C2' AND SC.Grade>=60
+5. SELECT Student.Sname FROM SC,Student,Course WHERE SC.Sno=Student.Sno AND SC.Cno = Course.Cno AND Course.Cname='数据库'
