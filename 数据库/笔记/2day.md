@@ -219,3 +219,12 @@ WHERE 外层列 IN (
 **NOT IN**
 查询“不在某个集合中”的数据。
 
+```sql
+SELECT 外层列
+FROM 外层表
+WHERE 外层列 NOT IN (
+    SELECT 内层列
+    FROM 内层表
+);
+```
+
