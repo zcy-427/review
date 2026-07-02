@@ -1,1 +1,5 @@
-1. SELECT Sname FROM Students WHERE EXISTS (SELECT * FROM )
+1. SELECT Sname FROM Students WHERE EXISTS (SELECT * FROM SC WHERE Students.Sno = SC.Sno);
+
+2. SELECT Sname FROM Students WHERE NOT EXISTS (SELECT * FROM SC WHERE Students.Sno = SC.Sno);
+
+3. SELECT Sname FROM Students WHERE EXISTS (SELECT * FROM SC WHERE Students.Sno = SC.Sno AND SC.Cno = 'C001');
