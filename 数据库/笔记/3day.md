@@ -217,4 +217,5 @@ F = { A → B, B → C, C → D }
 1NF、2NF、3NF、BCNF
 ```
 
-c g
+### 常见概念
+
