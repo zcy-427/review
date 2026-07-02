@@ -299,4 +299,43 @@ WHERE EXISTS (
 );
 ```
 
+## 例题
+
+### 例题 1：查询至少选修了一门课的学生姓名
+
+```sql
+SELECT Sname
+FROM Student
+WHERE EXISTS (
+    SELECT *
+    FROM SC
+    WHERE SC.Sno = Student.Sno
+);
+```
+
+解释：
+
+```text
+对 Student 中每个学生，去 SC 查是否有相同 Sno。
+有，则输出该学生姓名。
+```
+
+---
+
+### 例题 2：查询没有选课的学生姓名
+
+用 `NOT EXISTS`：
+
+```sql
+SELECT Sname
+FROM Student
+WHERE NOT EXISTS (
+    SELECT *
+    FROM SC
+    WHERE SC.Sno = Student.Sno
+);
+```
+
+这个和 `NOT IN` 的效果类似。
+
 
