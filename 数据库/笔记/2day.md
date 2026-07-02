@@ -287,3 +287,16 @@ WHERE Grade > (
 
 `EXISTS` 是谓词，用来测试子查询是否返回结果。若子查询非空，则 `EXISTS` 为真；若子查询为空，则为假。
 
+## 核心模板
+
+```sql
+SELECT 外层列
+FROM 外层表
+WHERE EXISTS (
+    SELECT *
+    FROM 内层表
+    WHERE 内层表.列 = 外层表.列
+);
+```
+
+
