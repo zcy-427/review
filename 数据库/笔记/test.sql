@@ -1,1 +1,5 @@
-1. 
+1. SELECT COUNT(*) FROM Student 
+
+2. SELECT MAX(Score) FROM SC WHERE Cno='C1'
+
+3. SELECT AVG(Score) FROM SC WHERE Cno='C1'
