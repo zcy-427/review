@@ -167,84 +167,33 @@ HAVING AVG(Grade) >= 80;
 | 能否直接用聚合函数 | 一般不能                | 可以                        |
 | 例子        | `WHERE Grade >= 60` | `HAVING AVG(Grade) >= 80` |
 
+---
 
-### 模板 1：总数
-
-题目：
-
-> 查询学生总人数。
+## 模板
 
 ```sql
+-- 总数
 SELECT COUNT(*)
-FROM Student;
+FROM 表;
+
+-- 最大值
+SELECT MAX(列)
+FROM 表;
+
+-- 平均值
+SELECT AVG(列)
+FROM 表
+WHERE 条件;
+
+-- 每组平均值
+SELECT 分组列, AVG(统计列)
+FROM 表
+GROUP BY 分组列;
+
+-- 分组后筛选
+SELECT 分组列
+FROM 表
+GROUP BY 分组列
+HAVING 聚合函数(列) 条件;
 ```
 
----
-
-### 模板 2：最大值
-
-题目：
-
-> 查询最高成绩。
-
-```sql
-SELECT MAX(Grade)
-FROM SC;
-```
-
----
-
-### 模板 3：平均值
-
-题目：
-
-> 查询课程 C1 的平均成绩。
-
-```sql
-SELECT AVG(Grade)
-FROM SC
-WHERE Cno = 'C1';
-```
-
----
-
-### 模板 4：每组统计
-
-题目：
-
-> 查询每门课程的平均成绩。
-
-```sql
-SELECT Cno, AVG(Grade)
-FROM SC
-GROUP BY Cno;
-```
-
----
-
-### 模板 5：分组后筛选
-
-题目：
-
-> 查询平均成绩大于等于 80 的课程号。
-
-```sql
-SELECT Cno
-FROM SC
-GROUP BY Cno
-HAVING AVG(Grade) >= 80;
-```
-
----
-
-### 模板 6：每个学生选课门数
-
-题目：
-
-> 查询每个学生的选课门数。
-
-```sql
-SELECT Sno, COUNT(*)
-FROM SC
-GROUP BY Sno;
-```
