@@ -123,7 +123,7 @@ WHERE Dept = '软件工程';
 
 ## 安全与授权
 
-## GRANT 授权
+### GRANT 授权
 
 ```
 GRANT SELECT
@@ -139,7 +139,7 @@ TO User1;
 
 ---
 
-## REVOKE 收回权限
+### REVOKE 收回权限
 
 ```
 REVOKE SELECT
