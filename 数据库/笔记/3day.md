@@ -337,3 +337,13 @@ Sno → Dname
 ```text
 Dname 不应该放在 Student 表里，应该单独放 Department 表。
 ```
+
+### BCNF
+
+关系模式 R 满足 BCNF，当且仅当对每一个非平凡函数依赖：
+
+X → Y
+
+都有：
+
+X 是超键。
