@@ -246,7 +246,7 @@ R(Sno, Cno, Sname, Cname, Grade)
 Sname、Cname、Grade 是非主属性。
 ```
 
-例子：
+（判断是否为超键）例子：
 
 ```
 Student(Sno, Sname, Dept)
