@@ -119,3 +119,36 @@ WHERE Dept = '软件工程';
 ```
 视图可以简化用户操作，提高数据安全性，提供一定程度的数据独立性，并可以使用户以不同角度观察数据。
 ```
+
+
+## 安全与授权
+
+## GRANT 授权
+
+```
+GRANT SELECT
+ON Student
+TO User1;
+```
+
+意思：
+
+```
+把 Student 表的查询权限授予 User1。
+```
+
+---
+
+## REVOKE 收回权限
+
+```
+REVOKE SELECT
+ON Student
+FROM User1;
+```
+
+意思：
+
+```
+从 User1 收回 Student 表的查询权限。
+```
