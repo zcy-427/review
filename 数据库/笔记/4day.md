@@ -27,9 +27,41 @@ UPDATE Account SET balance = balance + 100 WHERE name = 'B';
 
 ## 事务的ACID特性
 
-|特性|英文|含义|
-|---|---|---|
-|原子性|Atomicity|事务中的操作要么全做，要么全不做|
-|一致性|Consistency|事务执行前后数据库都要保持一致状态|
-|隔离性|Isolation|多个事务并发执行时，互不干扰|
-|持久性|Durability|事务一旦提交，对数据库的改变永久保存|
+| 特性  | 英文          | 含义                 |
+| --- | ----------- | ------------------ |
+| 原子性 | Atomicity   | 事务中的操作要么全做，要么全不做   |
+| 一致性 | Consistency | 事务执行前后数据库都要保持一致状态  |
+| 隔离性 | Isolation   | 多个事务并发执行时，互不干扰     |
+| 持久性 | Durability  | 事务一旦提交，对数据库的改变永久保存 |
+## 事务控制语句
+
+|语句|作用|
+|---|---|
+|BEGIN TRANSACTION|开始事务|
+|COMMIT|提交事务|
+|ROLLBACK|回滚事务|
+
+例子：
+
+```
+BEGIN TRANSACTION;
+
+UPDATE Account
+SET balance = balance - 100
+WHERE name = 'A';
+
+UPDATE Account
+SET balance = balance + 100
+WHERE name = 'B';
+
+COMMIT;
+```
+
+如果中间出错：
+
+```
+ROLLBACK;
+```
+
+表示撤销事务中已经做过的操作。
+
