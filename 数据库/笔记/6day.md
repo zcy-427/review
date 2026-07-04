@@ -59,3 +59,41 @@
 
 ## 存储过程
 
+### 1. 存储过程是什么？
+
+存储过程是预先编译并保存在数据库中的一组 SQL 语句。
+
+考试定义：
+
+```
+存储过程是存储在数据库服务器端、可以被反复调用执行的一组预编译 SQL 语句集合。
+```
+
+### 2. 存储过程优点
+
+```
+提高代码复用性；
+减少网络传输；
+提高执行效率；
+增强安全性；
+便于集中管理业务逻辑。
+```
+
+### 3. 简单例子
+
+```sql
+CREATE PROCEDURE GetStudentByDept
+    @Dept VARCHAR(20)
+AS
+BEGIN
+    SELECT Sno, Sname
+    FROM Student
+    WHERE Dept = @Dept;
+END;
+```
+
+调用：
+
+```sql
+EXEC GetStudentByDept '软件工程';
+```
