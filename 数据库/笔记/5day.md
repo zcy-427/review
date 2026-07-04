@@ -152,3 +152,4 @@ FROM User1;
 ```
 从 User1 收回 Student 表的查询权限。
 ```
+
