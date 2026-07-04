@@ -6,14 +6,3 @@
 
 4. SELECT Sname FROM Students WHERE NOT EXISTS (SELECT * FROM Course WHERE NOT EXISTS (SELECT * FROM SC WHERE Students.Sno = SC.Sno AND SC.Cno = Course.Cno));
 
-
-create PROCEDURE GetStudentsByCourse(IN course_id VARCHAR(10))
-BEGIN
-    SELECT Sname 
-    FROM Students 
-    WHERE EXISTS (
-        SELECT * 
-        FROM SC 
-        WHERE Students.Sno = SC.Sno AND SC.Cno = course_id
-    );
-END;
