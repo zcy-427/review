@@ -137,3 +137,19 @@ EXEC GetStudentByDept '软件工程';
 |UPDATE 触发器|修改数据时触发|
 |AFTER 触发器|操作执行后触发|
 |INSTEAD OF 触发器|替代原操作执行|
+
+### 4.inserted 和 deleted 表
+
+这是触发器常考点。
+
+```
+inserted：保存插入后或修改后的新数据。
+deleted：保存删除前或修改前的旧数据。
+```
+
+|操作|inserted|deleted|
+|---|---|---|
+|INSERT|有新记录|无|
+|DELETE|无|有旧记录|
+|UPDATE|有新记录|有旧记录|
+
