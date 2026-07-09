@@ -1,0 +1,189 @@
+001: 计算机网络 Computer Network 任课教师：李海 电子邮件：lihai@ynu.edu.cn
+002: 教学安排 v 教学方法：课堂讲授，课后练习，实验实践 v 学时安排：讲授54学时，实验18学时
+003: 课程要求 v 了解计算机网络的体系结构，掌握TCP/IP体系结构 v 掌握计算机网络协议的概念、协议层次及各层次的主要协议 v 掌握主要的网络传输介质、数据交换的主要类型及基本原理 v 掌握应用层协议原理及典型的应用层协议编程 v 掌握传输层主要原理，了解TCP、UDP原理 v 掌握网络层主要原理，熟练掌握协议地址、路
+004: 教材和参考书： 教材： 《计算机网络：自顶向下方法（原书第8版）》， James F.Kurose/Keith W.Ross，陈鸣译，机械工业出版社
+005: 网络资料与参考书 1、课程教材网站 https://gaia.cs.umass.edu/kurose_ross/index.php 2、http://ietf.org 参考书： 《TCP/IP详解 卷1:协议》 《计算机网络 (第8版)》，谢希仁，电子工业出版社
+006: 教材章节
+007: 第一章 计算机网络概述 提纲 : 目标 : v 什么是 Internet? v 了解基本术语和概念 v 掌握网络的基本原理 v 什么是协议 ? v 为后续章节更深入的 v 网络边缘：主机、端系统 学习打下基础 v 接入网：物理媒体 v 方法： v 网络核心：分组交换、线路交换 § 以 Internet 为例 v Int
+008: 什么是互联网 1.1 （ ） 计算机网络的定1义C和o结mp构uter Network 1. l 什么是网络 ?—— Human network as an example. l 什么是计算机网络? Ø Computer Network——计算机的集合: u 通过通信链路连接 u 以共享资源为目标 u 资源包括：计算机
+009: 什么是互联网 1.1 构成网络的重要概念： 节点  主机及其上运行的应用程序 l 路由器、交换机等网络交换设备 l 边：通信链路  接入网链路：主机连接到互联网的链路 l 主干链路：路由器间的链路 l 协议 
+010: 什么是互联网 1.1 互联网的定义和结构 2. l What is internet（互连网）? Ø 互联网是“计算机网络”的互联互通 可以看作是计算机网络的集合，即网络中的网络。 p internet 是指多个网络相互连接构成的网络，并更多地代表网络互连技术； l What is Internet（因特网）? p I
+011: Internet：全球最大、最重要的计算机网络 l 如何称呼 Internet？ l 因特网：推荐，但却长期未得到推广。 l 互联网 Internet ：目前流行最广，事实上的标准译名。 l 互联网 ≠互连网。 u互连网：局部范围互连起来的计算机网络。 思考：它们说的是哪个网？ 上网，联网，网民，网吧，网银，网购，网管
+012: 万物联网 大众熟悉的三大类网络 人人用网 电信网络 有线电视网络 计算机网络 提供电话、电报 向用户传送各 使用户能在计算机 及传真等服务。 种电视节目。 之间传送数据文件。 发展最快的并起到核心作用的是计算机网络。
+013: 万物“联三网网融合”：融入现代计算机网人络人技术用网
+014: 什么是 从具体构成角度 1.1.2 Internet : 边缘：数十亿台互联计算设 1. 备 : mobile network § hosts = end systems national or global ISP § 在互联网的 “ 边缘 ” 运行网络 应用程序 核心：分组交换设备 转 2. : 发数据包（分组） 
+015: 有趣 的互联网连接设备 “ ” Tweet-a-watt: monitor energy use bikes Pacemaker & Monitor Amazon Echo Web-enabled toaster + IP picture frame weather forecaster Internet refrig
+016: 什么是 从具体构成度 1.1.2 Internet : v Internet: “network of networks” § Interconnected ISPs（互联网服务提供商） § 松 散 的 层 次 结 构 mobile network 4G national or global ISP § 公 共 Int
+017: 什么是协议 ? 人类协议 网络协议 : network protocols : v “ 几点了 ?” v 类似人类协议 v 我有一个问题 v 机器之间的协议而非人与人 “ ” 之间的协议 v 你好 v Internet 中所有的通信行 为都受协议制约 发送特定的消息 … … 收到消息时采取的特 协议定义了在两个或多个通
+018: 什么是协议？ A protocol defines the format and the order of messages entities exchanged between two or more communicating , as well as the actions taken on the transm
+019: 什么是协议？ Network Protocol Ø Syntax: Syntax refers to the structure or format of the data, meaning the order in which they are presented. 语法是指数据的格式或结构，也就是数据字段的排列顺序
+020: 什么是协议？ a human protocol and a computer network protocol: Hi TCP connection request Hi TCP connection Got the response time? Get http://www.awl.com/kurose-ross 2
+021: 什么是协议？ Network Protocol
+022: 互联网的标准化工作 互联网的标准化工作对互联 互联网协会 ISOC 网的发展起到了非常重要的 互联网体系结构 作用。 研究委员会 IAB 互联网研究部 IRTF 互联网工程部 IETF 互联网研究指导小组 互联网工程指导小组 IRSG IESG … 领域 领域 RG … RG WG … WG WG … WG 组织架构
+023: 标准发表：以 RFC 的形式 l RFC：Request For Comments （请求评论）。 l 所有的 RFC 文档都可从互联网上免费下载。 l https://www.rfc-editor.org/ l 任何人都可以用电子邮件随时发表对某个文档的意见或建议。 l 但并非所有的 RFC 文档都是互联网标准。只有
+024: 标准化过程 互联网草案 (Internet Draft) RFCxxxx 标准轨道 非标准轨道 建议标准 实验 (Proposed Standard) (Experimental) 草案标准 信息 (Draft Standard) (Informational) 互联网标准 历史 (Internet Standard)
+025: 从服务角度 1.1.3 What’s the Internet : （1）使用通信设施进行通信的分 布式应用 Web、VoIP、email、分布式游戏、 mobile network l national or global ISP 电子商务、社交网络…... Streaming Skype video （2）互联网做
+026: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+027: 仔细观察互联网结构 网络边缘 mobile network Network edge : national or global ISP vhosts: clients and servers v服务器通常位于数据中心 v 应用程序 ( 客户端和服务器 ) local or regional I S P home net
+028: 仔细观察互联网结构 mobile network Network edge: national or global ISP vhosts: clients and servers vservers often in data local or regional centers I S P home network co
+029: 仔细观察互联网结构 mobile network Network edge: national or global ISP vhosts: clients and servers vservers often in data centers Access networks, physical media: local 
+030: 网络边缘和服务模式： 1. v 端系统（主机） : § 运行应用程序 § e.g. Web, email § 在“网络边缘” peer-peer  client/server model 客户端主机请求，从始终在线的 v 服务器接收服务 例如， 浏览器 服务器 电子client/server Web / ; 邮件客户
+031: 端系统之间的两种通信模式 客户/服务器模式 对等模式 • Client / Server 模式 • Peer to Peer 模式 • 简称为 C/S 模式 • 简称为 P2P 模式
+032: 1. 客户-服务器模式（C/S 模式） l 客户/服务器方式所描 述的是进程之间服务和 网络边缘 运行 运行 服务器程序 被服务的关系。 客户程序 B l 客户是服务的请求方， A ① 请求服务 服务器是服务的提供方。 ② 得到服务 客户 网络核心 服务器 客户与服务器的通信关系建立 后，通信可以是双向的，客户 和服务
+033: 客户程序和服务器程序主要特点 l 客户程序 u 被用户调用后运行，需主动向远地服务器发起通信（请求服务）。必须 知道服务器程序的地址。 u 不需要特殊的硬件和很复杂的操作系统。 l 服务器程序 u 专门用来提供某种服务的程序，可同时处理多个客户请求。 u 一直不断地运行着，被动地等待并接受来自各地的客户的通信请求。不 
+034: 2. 对等连接模式（P2P 模式） l 两台主机在通信时不区分 服务请求方和服务提供方。 E 网络边缘 C 运行 运行 l 只要都运行了 P2P 软件， P2P 程序 P2P 程序 就可以进行平等的、对等 连接通信。 运行 网络核心 P2P 程序 运行 对等连接方式从本质上看仍然 F P2P 程序 是使用客户服务器方式
+035: 网络边缘：使用网络核心的面向连接服务
+036: 网络边缘：使用网络核心的无连接服务
+037: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+038: 网络核心 1.3 v 网络核心：网络设备的网状网络 mobile network 基本问题：数据怎样通过 national or global ISP  网络进行传输？ circuit switching（电路 l 交换） ：为每个呼叫预留一条专 有电路：如电话网 local or regional ISP pack
+039: 、网络核心数据交换方式 ：电路交换 1 1 v 交换 的含义： “ (switching)” v 转接：把一条电话线转 接到另一条电话线，使 它们连通起来。 v 从通信资源的分配角度 来看，交换就是按照某 种方式动态地分配传输 线路的资源。
+040: 网络核心交换方式 ：电路交换 1 电路交换特点 分为三个阶段： l 建立连接：建立一条专用的物理通路（占用通信资源）。 l 通话：主叫和被叫双方互相通电话（一直占用通信资源）。 l 释放连接：释放刚才使用的专用的物理通路（归还通信资源）。 这种必须经过“建立连接（占用通信资源）、通话（一直占用通信资 源）、释放连接（归
+041: 网络核心交换方式 ：电路交换 1 电路交换特点：通话的两个用户始终占用端到端的通信资源 电信网 交换机 交换机 交换机 交换机 A B C D E F 用户线 用户线 中继线 计算机数据具有突发性，这导致在传送数据时，通信线路的利用率很 低，真正用来传送数据的时间往往不到 10%，甚至不到 1%，已被用 户占用的通信线
+042: 网络核心交换方式 ：电路交换 1 端到端的资源被分配给从源到 目标端的呼叫 “call” 图中，每段链路有4条线路：  该 呼 叫 采 用 了 上 面 链 路 的 第 2 个 电 路 l 路，右边链路的第1个电路（piece） 独享资源：不同享  每 个 呼 叫 一 旦 建 立 起 来 就 能 够 保 证 性 l 
+043: 网络核心数据交换方式 ：电路交换 1 最大特点：为呼叫预留端 - 端资源 链路带宽、交换能力  专用资源：不共享  类似电路，保证性能  要求传输前建立呼叫连接  Introduction 1-43
+044: 电路交换采用的信道复用技术 网络资源（如带宽）被  dividing link bandwidth 分成片 分片方式： into “pieces” l 为呼叫分配片 频分复用 (Frequency- l l 如果某个呼叫没有数 division multiplexing) 据， 则其资源片处于 时分复用(Time-d
+045: 电路交换 : FDM and TDM ycneuqerf time ycneuqerf Frequency Division Multiplexing (FDM)频分复用 4 users § 光学、电磁频率分为（窄）频段 § 每个呼叫分配了自己的频段，可以 以该窄带的最大速率传输 Time Division Multi
+046: 信道复用计算举例 在一个电路交换网络上，从主机 到主机 发送 一个 A B 比特的文件需要多长时间？ 640,000 § 所有的链路速率为 1.536 Mbps § 每条链路使用时隙数为 的 24 TDM § 建立端 - 端的电路需 500 ms 提示： 秒】 【毫秒】 【毫秒】 【微秒】 1s[ = 1000ms 1
+047: 电路交换的不足 v电路交换不适合计算机之间的 通信 连接建立时间长  计算机之间的通信有突发性，  如果使用线路交换，则浪费的 片较多，即使这个呼叫没有数 据传递，其所占据的片也不能 够被别的呼叫使用 可靠性不高？ 
+048: 、网络核心数据交换方式 ：分组交换 2 2 v 每个端到端数据流被划分为 resource contention （资 数据分组 源冲突） : v 用户数据分组共享网络资源  总资源需求可能超过可用 量 v 每个数据分组使用全部链路 拥塞：数据包队列，等待 带宽 链路使用 v 根据需要使用资源 存储和转发：数据包一次
+049: 分组交换示例 Packet Buffer p p p p p p p p p p p p Store-and-forward 49
+050: 、分组交换特性：存储转发 1 L R R R Introduction 1-50
+051: 、分组交换特性 排队时延和分组丢失 2 2: R = 100 Mb/s C A D R = 1.5 Mb/s B E queue of packets waiting for transmission over output link 如果分组到达速率 > 链路的输出速率，排队将发生 : Introduction: 1
+052: 排队 Packet-switching: R = 100 Mb/s C A D R = 1.5 Mb/s B E queue of packets waiting for transmission over output link Packet queuing and loss:如果链路的到达速率（以 bps 为单位）
+053: 3、分组交换体现的关键网络核心功能 转发： routing v 既 “switching” rout a in lg g o a r l i g th o m rithm 路由： v local action:将 llooccaall ffoorrwwaarrddiinngg ttaabbllee global act
+054: 分组交换以“分组”作为数据传输单元 l 互联网采用分组交换技术。分组是在互联网中传送的数据单元。 l 发送端依次把各分组发送到接收端。 分组 1 首部 数 据 分组 2 首部 数 据 分组 3 首部 数 据
+055: 接收端收到分组后剥去首部，还原成原来的报文 分组 1 首部 数 据 分组 2 假定分组在传输过程 首部 数 据 分组 3 中没有出现差错，在 转发时也没有被丢弃。 首部 数 据 110100011010101011010101110001001101001011 报文
+056: 分组在互联网中的转发 l 根据首部中包含的目的地址、源地 暂存收到的分组。 址等重要控制信息进行转发。 l 每一个分组在互联网中独立选择传 检查分组首部。 输路径。 查找转发表。 l 位于网络核心部分的路由器负责转 发分组，即进行分组交换。 按照首部中的目的地址， l 路由器要创建和动态维护转发表。 找到合适的接口转发
+057: H 网络核心部分 H 2 4 路由器 H 6 网络 H 1 主机 H 5 H 3 (a) 核心部分的路由器把网络互连起来
+058: 网络核心部分 H 2 H 4 路由器 B D H 6 E 主机 A H 1 H 5 C 发送的分组 H 3 (b) 核心部分中的网络可用一条链路表示
+059: 每个分组独立选择传输路径 路由器 H H 4 2 D 注意分组路径的变化！ B H 1 主机 H 6 E 互联网 A H 向 H 发送分组 1 5 C H 5 H 向 H 发送分组 2 6 H 3
+060: 分组的存储转发过程 H H 2 4 H 向 H 发送分组 1 5 D B在路由器 A 暂存 路由器 H 6 查找转发表 主机 在路由器 E 暂存 在路由器 C 暂存 找到转发的端口 查找转发表 查找转发表 转发 E 互联网 找到转发的端口 H A 找到转发的端口 1 转发 转发 最后到达目的主机 H 5 H C 5 H
+061: 分组交换的优点 优点 所采用的手段 高效 在分组传输的过程中动态分配传输带宽，对通信链路是逐段占用。 灵活 为每一个分组独立地选择最合适的转发路由。 迅速 以分组作为传送单位，可以不先建立连接就能向其他主机发送分组。 保证可靠性的网络协议；分布式多路由的分组交换网，使网络有很好 可靠 的生存性。
+062: 分组交换带来的问题 l 排队延迟：分组在各路由器存储转发时需要排队。 l 不保证带宽：动态分配。 l 增加开销：各分组必须携带控制信息；路由器要暂存分组，维护转 发表等。
+063: 分组交换 统计多路复用 : 100 Mb/s C A Ethernet statistical multiplexing 1.5 Mb/s B queue of packets waiting for output link D E 来自于主机 的序列数据包没有固定的模式、带宽，按需使 A & B 用带宽资源 统计多路
+064: 分组交换 电路交换 VS 举例 : § 1 Gb/s link … N § each user: .users . 1 Gbps link • 100 Mb/s when “active” • active 10% of time p=0.1 Q1:在电路交换和分组交换下，有多少用户可以使用此网络？ § circuit
+065: Packet switching VS circuit switching v 分组交换是“突发数据的胜利者？”  适合于对突发式数据传输 资源共享 l 简单，不必建立呼叫 l 过度使用会造成网络拥塞：分组延时和丢失 对可靠地数据传输需要协议来约束：拥塞控制 l Q: 怎样提供类似电路交换的服务使用分组交换？ 保
+066: 补充内容： 报文交换 l 在 20 世纪 40 年代，电报通信就采用了基于存储转发原理的报文交 换 (message switching)。 l 但报文交换的时延较长，从几分钟到几小时不等。 l 现在报文交换已经很少有人使用了。
+067: 补充内容： 电路交换、报文交换和分组交换的主要区别 电路交换 报文交换 分组交换 报 P1 文 P2 P1 连接建立 P3 P2 P4 P3 P P 2 1 P4 报 P3 数据传送 报文 文 P4 连接释放 报 文 t A B C D A B C D A B C D 数据 比特流直达终点 报文 报文 报文 分组 分组
+068: 4、分组交换网络：存储-转发技术分类： 分组交换: 分组通过路由器存储转发一段一段从源端传到目标 端，按照有无网络层的连接，分成： 数据报网络： 1. 根据分组的目标地址决定下一跳 Ø 在不同的阶段，路由可以改变 Ø 类似：问路 Internent Ø 虚电路网络： 2. 每个分组都带标签（虚电路标识 VC ID），
+069: 通信网络技术分类 通信网络 电路交换网 分组交换网 FDM TDM 虚电路网络 数据报网络 69 2026年3月31日星期二
+070: 单选题 1分 1.负责制定和发布全球互联网标准规范的机构 是： IRTF A IEEE B IETF C ISO D 提交
+071: 单选题 1分 在计算机网络中，哪种技术允许多个用户同时 2. 共享同一物理通信信道？ ： 电路交换 A 频分复用 B 报文交换 C 分组交换 D 提交
+072: 单选题 1分 网络协议的三要素中，规定 数据与控制信 3. “ 息的结构或格式 的是： ” 语义 (Semantics) A 语法 (Syntax) B 时序 (Timing) C 接口 (Interface) D 提交
+073: 单选题 1分 关于网络核心部分的描述，错误的是（ ） 4. 网络核心主要由大量的路由器和互联链路组成 A 网络核心的主要功能是向网络边缘提供连通性 B 和数据转发服务 网络核心中的路由器通常运行各种应用程序 C （如 服务器、邮件服务） Web 分组交换是网络核心中主要的数据交换方式 D 提交
+074: 单选题 1分 若某链路的带宽为 ，报文长度为 5. 1 Gbps 1250 ，忽略传播时延和处理时延，仅计算发送时延， Bytes 发送该报文需要的时间是（ ） A 1.25 μs B 10 μs C 12.5 μs D 100 μs 提交
+075: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+076: 接入网和物理媒体 1.4 如何将终端系统连接到边缘 Q: 路由器 ? mobile network v 住宅接入网 national or global ISP v 机构接入网络(school, company) v 移动接入网络 local or （WiFi、4G/5G） regional I S P 注意事项 : 
+077: 1.接入网:家庭网络 （拨号） (1)Dial-up Modem central office telephone network Internet home home ISP dial-up PC modem modem (e.g., AOL) 将上网数据调制加载音频信号上， 在电话线上传输， v 在局端将其中的数据
+078: 1.接入网:家庭网络 （ ）数字用户线 2 home Existing phone line: Internet phone 0-4KHz phone; 4-50KHz (DSL) upstream data; 50KHz- 1MHz downstream data DSLAM telephone Splitter（ 
+079: 1.接入网:家庭网络 （3）cable-based（基于电缆） 接入 cable headend … cable splitter modem C O V V V V V V N I I I I I I D D T D D D D D D A A R E E E E E E T T O O O O O O O A A 
+080: 1.接入网:家庭网络 cable headend … cable splitter cable modem modem CMTS termination system 数据，电视传输 ISP 通过共享电缆的不同频 率分享网络 § HFC: hybrid fiber coax 混合光纤同轴电缆 下行传输速率 上 • 非对
+081: 光纤同轴混合网（HFC 网） l HFC (Hybrid Fiber Coax) 网基于有线电视网 CATV 网。 l 改造：把原有线电视网中的同轴电缆主干部分改换为光纤 高带宽光纤 光纤结点 同轴电缆 光纤 头端 光纤 同轴电缆 HFC 网的结构
+082: 1.接入网:家庭网络 （ ） 光纤到户） 4 FTTH( 代表多种宽带光纤接入方式。 FTTx 表示 Fiber To The…（光纤到…），例如： 光纤到户 FTTH (Fiber To The Home)：在光纤进入用户的 • 家门后，才把光信号转换为电信号。 光纤到大楼 FTTB (Fiber To The Bu
+083: 光配线网 ODN (Optical Distribution Network) 头端 光纤干线 1:N  光网络单元 发往特定 ONU 的数据 下行 光分路器 头端 光纤干线 1:N 局端 光配线网 (ODN) 用户端  ONU OLT ONU ONU 特定 ONU 发来的数据 ONU 上行 OLT ONU OLT
+084: 1.接入网:家庭网络 Wireless and wired devices 往返前端或中央局 经常组合使用 在单个盒子里 cable or DSL modem router, firewall, NAT WiFi wireless access point (54, 450 Mbps) wired Ethernet (
+085: （2）接入网：企业网络 Enterprise link to ISP (Internet) institutional router Ethernet institutional mail, switch web servers § 公司、大学 , etc. § 有线无线链路技术的混合，端系统混合连接交换机和路由器（我
+086: （3）无线接入网络 Ø 各无线端系统共享无线接入网络(端系统到无线路由器) 通过基站或者无线接入点 无线LANs: 广域蜂窝接入网络 建筑物内部 (100 ft) 由移动蜂窝网络提供 • 802.11b/g (WiFi): 11, 54， 距离 (10’s km) • 450 Mbps 传输速率 § 10’s Mbps
+087: （4）接入网：数据中心网络 § 高带宽链路 (10s to 100s Gbps) § 将成百上千台服务器连接在一起，并 mobile network 连接到互联网 national or global ISP local or regional I S P home network content provider n
+088: 2.链路：物理媒体 双绞线 (TP) 两根绝缘铜导线拧合 Bit: 在发送-接收对间传播   5类：100Mbps 以太网  物理链路：连接每个发送-接 l 收对之间的物理媒体 ，Gbps 千兆位以太网  导引型媒介 guided media : l 6类：10Gbps万兆以太网 信号沿着 固 体 媒 介 被 
+089: 物理介质 同轴电缆： 光纤和光缆： 两根同轴的铜导线  光脉冲，每个脉冲表示一个   双向 bit，在玻璃纤维中传输  基带电缆：  高速： 电缆上一个单个信道 点 到 点 的 高 速 传 输 （ 如 1 0 G b p s - l l Ethernet 100Gbps传输速率 ） l 宽带电缆： 低 误码率
+090: Links:物理媒体 无线电链路类型： （无线电） Wireless radio § Wireless LAN (WiFi) § 电磁频谱中各种“波段”中 • 10-100’s Mbps; 10’s of meters 携带的信号 § wide-area (e.g., 4G 蜂窝网络 ) 没有物理“电线” • 10’s
+091: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+092: 1.5 互联网结构:网络的网络 v端系统通过接入ISPs (Internet mobile network Service Providers)连接到互联网 national or global ISP § 住宅，公司和大学的ISPs v接入ISPs相应的必须是互联的 § 因此任何2个端系统可相互发送分 local o
+093: 1.5 互联网结构:网络的网络 问题：给定数百万个接入 ISP，如何将它们连接在一起？ … … access access net net access net access access net net access access net net … … access access net net access ne
+094: 1.5 互联网结构:网络的网络 问题：给定数百万个接入 ISP，如何将它们连接在一起？ … … access access net net access net access access … net … net access access net net connecting each access ISP to …
+095: 1.5 互联网结构:网络的网络 选项: 将每个接入ISP都连接到全局ISP（全局范围内覆盖）？ 客户ISPs和提供者ISPs有经济合约 … … access access net net access net access access net net access access net net … … global 
+096: 1.5 互联网结构:网络的网络 竞争：但如果全局ISP是有利可为的业务，那会有竞争者 … … access access net net access net access access net net access access ISP A net net … … access ISP B access net ne
+097: 1.5 互联网结构:网络的网络 合作：通过ISP之间的合作可以完成业务的扩展，肯定 会有互联，对等互联的结算关系 Internet exchange point … … access access net net access net access access net net IXP access access IS
+098: 1.5 互联网结构:网络的网络 …然后业务会细分（全球接入和区域接入），区域网络将出现， 用与将接入ISPs连接到全局ISPs … … access access net net access net access access net net IXP access access ISP A net net … … a
+099: 1.5 互联网结构:网络的网络 然 后 内 容 提 供 商 网 络 I C P ( I n t e r n e t C o n t e n t P ro v i d e r s , e . g . , Google, Microsoft) 可能会构建它们自己的网络，将它们的服务、 内容更加靠近端用户，向用户提供更好的服
+100: 1.5 互联网结构:网络的网络 Tier 1 ISP Tier 1 ISP G o ogle IXP IXP IXP Regional ISP Regional ISP access access access access access access access access ISP ISP ISP ISP ISP
+101: 1.5 互联网结构:网络的网络 v 松散的层次模型 v 中心: “tier-1” ISPs (e.g., Verizon, Sprint, AT&T, Cable and 国内/国际覆盖，速率极高 Wireless), v 直接与其他第一层 ISP 相连 , 与大量的第二层 ISP 和其他客户 网络相连 Tier-1 
+102: Tier-1 ISP: e.g., Sprint 往返骨干网 peering … … . to/from customers Introduction 1-102 … … … POP: point-of-presence
+103: 
+104: 1.5 互联网结构:网络的网络 v “Tier-2” ISPs: 更小些的 ( 通常是区域性的 ) ISP § 连接到一个或多个 Tier-1 ISP，可能还有其他 Tier-2 ISP 也 Tier-2 ISPs 可以私下对等连 第 2 层 ISP 向第 Tier-2 ISP Tier-2 ISP 接。 层 支付与其
+105: 1.5 互联网结构:网络的网络 v “Tier-3” ISPs and local ISPs § 接入网 与端系统最近 ( ) local ISP Tier 3 local local local ISP ISP ISP ISP 本地和第 层 3 Tier-2 ISP Tier-2 ISP 是更高级 ISP 别的 的用
+106: 1.5 互联网结构:网络的网络 v 一个数据包通过多个网络！ local ISP Tier 3 local local local ISP ISP ISP ISP Tier-2 ISP Tier-2 ISP Tier 1 ISP Tier 1 ISP Tier 1 ISP Tier-2 ISP local Tier-2
+107: 1.5 互联网结构:网络的网络 Tier 1 ISP Tier 1 ISP G o ogle IXP IXP IXP Regional ISP Regional ISP access access access access access access access access ISP ISP ISP ISP ISP
+108: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组时延、丢包和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+109: 思考：分组延迟和丢失是如何发生的？ v 分组在路由器缓冲区中排队，等待轮流传输： § 当链路的到达速率（暂时）超过输出链路容量时，队列长 度会增加; 分组等待排到队头、被传输 § 当用于保存排队数据包的内存已满时，会发生数据包丢失 正在传输的分组(transmission delay) A B 缓冲区中的分组(queu
+110: （1）分组时延：四种类型 传输 Transmission 传播 Propagation A B nodal processing Queueing排队 d = d + d + d + d nodal proc queue trans prop 1.d : nodal processing 、 proc 2 d : qu
+111: 分组延时：四种类型 transmission A propagation B nodal processing queueing d = d + d + d + d nodal proc queue trans prop 3、d : transmission delay 4、d : propagation delay 
+112: 车队类比（1） 100 km 100 km ten-car caravan ttoollll bbooootthh ttoollll bbooootthh toll booth收费站 (aka 10-bit packet) ((aakkaa lliinnkk)) 汽车以100 km/hr 的速度高速公路行驶 将车队
+113: 车队类比（2） 100 km 100 km ten-car caravan toll booth toll booth (aka 10-bit packet) (aka router) 假设汽车以1000 km/hr 的速度再高速路上飙车 收费站服务每辆车需 1分钟 Q:在所有的汽车被第一个收费站服务完成之前，汽车
+114: （节点时延） Nodal delay d  d  d  d  d nodal proc queue trans prop d = 处理延时 proc 通常是微秒数量级或更少 l d = 排队延时 queue 取决于拥塞程度 l d = 传输延时 trans = L/R, 对低速率的链路而言很大（如拨号），
+115: 四种时延产生的地方 假设从结点 A 向结点 B 发送数据 在这里产生 在发送器产生发送时延 处理时延和排队时延 在链路上产生 (即传输时延) 传播时延 … 数据 队列 链路 发送器 结点 A 结点 B 四种时延产生的地方不一样
+116: 端对端时延 端到端时延（End-to-End Delay）是指一个数据包从源主 机出发，经过网络路径，最终到达目的主机所经历的 总时间 。 Ø 基本公式： 端到端时延 处理时延 排队时延 传输时延 传播时延 = + + + 即： Dend-to-end=∑(Dproc+Dqueue+Dtrans+Dprop) 其中求和
+117: 计算练习题 v 场景描述： 数据包需要从源主机 发送到目的主机 。路径中间经过 台路由 S D 2 器 ，即路径为： 。 (R1, R2) S→R1→R2→D Ø 全路径共有 3 段链路，每段链路长度均为 1,000 km 。 Ø 所有链路的传输速率均为 100 Mbps 。 Ø 信号传播速度均为 2.5x108 m/
+118: 
+119: 2、流量强度 traffic intensity = La/R § La/R ~ 0: 平均排队延迟小 La/R ~ 0 § La/R -> 1: 平均排队延迟大 § La/R > 1: more “work” arriving is more than can be serviced -平均延迟无穷大 （无限）! L
+120: 3、“真实”的互联网延迟和路由诊断 § “真正的”互联网延迟和丢失是什么样子的 ? § traceroute 诊断程序 :提供从源到路由器沿端到端互联 网路径到目的地的延迟测量. § For all i: l 沿着目的的路径，向每个路由器发送3个探测分组（生存 时间字段值为 i） l 路由器 i 将向发送方返回一个分组
+121: 的工作原理 Traceroute Traceroute建立在IP协议的TTL字段和ICMP协议的反馈机制之上，其过程是 一个逐步递增TTL值的循环。 Ø 发送初始探测包 ：工具首先向目标主机发送一个TTL值为1的数据包（通常 是UDP包或ICMP Echo Request）。 Ø 触发并接收ICMP超时响应 ：第一个路
+122: 假设源主机A到目标主机B之间有2个中间节点，也就 是说，A到B一共需要经过3跳。那么，traceroute的 检测时序如下：
+123: 真实的互联网延迟和路由 traceroute: gaia.cs.umass.edu to www.eurecom.fr 3 delay measurements from gaia.cs.umass.edu to cs-gw.cs.umass.edu 1 cs-gw (128.119.240.254) 1 ms 1 m
+124: 关于traceroute（linux) 在Windows系统下 Tracert hostname l 如 Tracert www.ynu.edu.cn 更完整的例子 l tracert [-d] [-h maximum_hops] [-j computer-list] [-w timeout] target_name
+125: 4、分组丢失原因及处理方法： v 原因：链路的队列缓冲区容量有限，当分组到达一 个满的队列时，该分组将会丢失 v 处理：丢失的分组可能会被前一个节点或源端系统 重传，或根本不重传 buffer packet being transmitted (waiting area) A B packet arriving to 
+126: 5、Throughput（吞吐量） v 在源端和目标端之间传输的速率 throughput: (bits/time unit) § instantaneous 瞬间吞吐量 : 给定时间点的速率 § average 平均吞吐量 : 较长时间内的速率 F/T bps plinipke c tahpaatc citayn c
+127: 吞吐量 R < R 平均端到端吞吐量是多少？ s c R s bits/sec R c bits/sec R > R 平均端到端吞吐量是多少？ s c R s bits/sec R c bits/sec 假设其他节点都不传输，端到端吞吐量=min{Rs,Rc} bottleneck link瓶颈链路 端端路径上，限制端
+128: 吞吐量：网络场景 R § 每个连接的端到端 s R s R s 吞吐量: R min(R ,R ,R/10) c s R c R c R c § 实际上: R or R is c s often bottleneck 10 个连接（公平地）共享主干瓶颈 链路 R bits/sec Introduction: 1-128
+129: 吞吐量 (throughput) l 单位时间内通过某个网络（或信道、接口）的实际数据 量。 l 受网络的带宽或网络的额定速率的限制。 u额定速率是绝对上限值。 u可能会远小于额定速率，甚至下降到零！ l 有时可用每秒传送的字节数或帧数来表示。
+130: 补充指标： 时延带宽积 时延带宽积 = 传播时延  带宽 （传播）时延（管道长度） 带宽 （管道截面积） 链 路 链路像一条空心管道 当发送端开始发送数据时，数据像水流一样注入链路。在第一个比特刚刚到达接收 端的那一刻（经过了 dprop ​ 时间），发送端已经向链路中注入了 R × dprop​ 比特 的数据。 链
+131: 第一章课后作业 课后作业 ： 1 ， R1,R4,R11,R16,R18,R19,R23,R24,R25,P5,P6 P10 131 2026年3月31日星期二
+132: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+133: 协议“层”和参考模型 网络是一个复杂的系统! 口 网络功能繁杂：数字信号的物 如何组织和 Question: 理信道承载 、点到点、路由、 实现这个复杂的网络 rdt、进程区分、应用等 功能？ 口 现实来看，网络的许多构成元 素和设备: 主机 • 路由器 • 各种媒体的链路 • 应用 • 协议 • 硬件、软件 • In
+134: 现实生活中的例子：航空系统 人员和行李的端到端转移 ticket (购买) ticket (投诉) baggage (检查) baggage (认领) gates (登机) gates (离机) 从跑道起飞 从跑道着陆 按航线飞行 按航线飞行 按航线飞行 您如何定义/讨论航空旅行系统？ § 一系列步骤，涉及多项服务 I
+135: 航空公司功能的分层 ticket (purchase) ticket (complain) ticket baggage (check) baggage (claim baggage gates (load) gates (unload) gate runway (takeoff) runway (land) take
+136: 为什么要分层？ 分层是设计/讨论复杂系统的有效方法: 概念化：结构清晰，便于标示复杂系统组件，以及描 述其相互关系 分层参考模型 Ø 结构化：模块化更易于维护和系统升级 改变某一层服务的实现不影响系统中的其他层次 l 对于其他层次而言是透明的 Ø 如航空系统改变登机检查程序并不影响系统的其它部分 Ø 分层思想被认
+137: 计算机网络的体系结构 v 网络的体系结构 (Network Architecture) 是计算机网络 的各层及其协议的集合，就是对计算机网络及其构件所 应完成的功能的精确定义（不涉及实现）。 v 实现 (implementation) 是遵循这种体系结构的前提下， 用何种硬件或软件完成这些功能的问题。 体系结构是抽象的
+138: 1、互联网协议栈分层模型 § application:（应用层）支持网络应用间的通信 aapppplliiccaattiioonn • HTTP, IMAP, SMTP, DNS 为人类用户或者其他应用程序提供网络应用服务 • ttrraannssppoorrtt PDU:报文(message) 协议数据单元 PDU:
+139: 各层的主要功能和协议 l 任务：通过应用进程间的交互来完成特定网络 5 应用层 应用。 l 协议：定义的是应用程序间通信和交互的规则。 4 运输层 l 把应用层交互的数据单元称为报文(message)。 3 网络层 l 例如：DNS，HTTP，SMTP 2 数据链路层 物理层 1
+140: 各层的主要功能 l 任务：负责向两台主机中进程之间的通信提供 5 应用层 通用的数据传输服务。 l 具有复用和分用的功能。 l 主要使用两种协议： 4 运输层 u 传输控制协议 TCP 3 网络层 u 用户数据报协议 UDP 。 2 数据链路层 物理层 1
+141: 各层的主要功能 l TCP (Transmission Control Protocol)： u 提供面向连接的、可靠的数据传输服务。 5 应用层 u 数据传输的单位是报文段 (segment)。 l UDP (User Datagram Protocol)： 4 运输层 u 提供无连接的尽最大努力 (best-eff
+142: 各层的主要功能 l 为分组交换网上的不同主机（端系统）提供通 信服务。 5 应用层 l 两个具体任务： u 路由选择：通过一定的算法，在互联网中的每 4 运输层 一个路由器上，生成一个用来转发分组的转发 表。 3 网络层 u 转发：每一个路由器在接收到一个分组时，要 2 数据链路层 依据转发表中指明的路径把分组转发到下
+143: 各层的主要功能 l 互联网使用的网络层协议是无连接的网际协议 IP (Internet Protocol) 和许多种路由选择 5 应用层 协议，因此互联网的网络层也叫做网际层或 IP 层。 4 运输层 l IP 协议分组也叫做 IP 数据报，或简称为数据 3 网络层 报。 2 数据链路层 物理层 1
+144: 各层的主要功能 l 常简称为链路层。 5 应用层 l 任务：实现两个相邻节点之间的可靠通信。 l 在两个相邻节点间的链路上传送帧（frame）。 l 如发现有差错，就简单地丢弃出错帧。 4 运输层 l 如果需要改正出现的差错，就要采用可靠传输 3 网络层 协议来纠正出现的差错。这种方法会使数据链 2 数据链路层 路层协
+145: 各层的主要功能 l 任务：实现比特（0 或 1）的传输。 5 应用层 l 确定连接电缆的插头应当有多少根引脚，以及 各引脚应如何连接。 l 注意：传递信息所利用的一些物理媒体，如双 4 运输层 绞线、同轴电缆、光缆、无线信道等，并不在 3 网络层 物理层协议之内，而是在物理层协议的下面。 2 数据链路层 物理层 1
+146: 沙漏计时器形状的 TCP/IP 协议族 Everything over IP ：IP 层可以支持多种的运输层、应用层协议 应用层 HTTP … SMTP DNS … RTP 运输层 TCP UDP 设计理念：网络核心 网络层 IP 部分越简单越好。 网络接口层 网络接口 1 网络接口 2 … 网络接口 3 IP ove
+147: 、 参考七层模型 2 ISO/OSI 表示层: 允许应用解释传输的数据, e.g.,  加密，压缩，机器相关的表示转换 会话层: 数 据 交 换 的 同 步 ， 设 置 与 另 一  台计算机中的进程的会话连接 互联网协议栈没有这两层!  这 些 服 务 ， 如 果 需 要 的 话 ， 必 须 被 应 l 用层加
+148: v 对等层与协议数据单元 v 参考模型把对等层次之间传送的数据单位称 OSI 为该层的协议数据单元 PDU (Protocol Data 。 Unit) v 任何两个同样的层次把 （即数据单元加上 PDU 控制信息）通过水平虚线直接传递给对方。这就 是所谓的 对等层 之间的通信。 “ ” 各层协议实际上就是在各个对等层
+149: 实体、协议、服务和服务访问点 v 实体 ：表示任何可以发送或接收信息的 (entity) 硬件或软件进程。 v 协议：控制两个对等实体进行通信的规则的集合。 v 在协议的控制下，两个对等实体间的通信使得本 层能够向上一层提供服务。 v 要实现本层协议，还需要使用下层所提供的服务。
+150: 注意：协议和服务在概念上是不一样的 协议 服务 上层使用服务原语获得下层所提供的 其实现保证了能够向上一层提供服务。 服务。 上面的服务用户只能看见服务，无法 对上面的服务用户是透明的。 看见下面的协议。 是“水平的” 是“垂直的”
+151: 服务和协议的联系和区别 服务与协议的区别 服务(Service)：低层实体向上层实体提供它们之间的通信的能力， l 是通过原语(primitive)来操作的，垂直 注：原语是操作系统或计算机网络用语范畴，是由若干条指令组成 的，用于完成一定功能的一个过程。 协议(protocol) ：对等层实体(peer entit
+152: 两个哲学家交流的例子比喻协议层次
+153: 计算机网络协议的三种体系结构 OSI 的七层协议体系结构 TCP/IP 的四层协议体系结构 五层协议的体系结构 7 应用层 4 应用层 应用层 6 表示层 (各种应用层协议，如 5 DNS, HTTP, SMTP 等) 5 会话层 4 运输层 3 运输层 (TCP 或 UDP) 4 运输层 3 网络层 2 网际层 IP
+154: 3、服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 5 5 4 4 3 3 3 2 2 2 2 1 1 1 1 物理传输媒体 物理传输媒体
+155: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 应用层首部 AP 数 据 AP 1 2 5 H 数 据 5 5 4 4 3 3 3 2 2 2 2 1 1 1 1 物理传输媒体 物理传输媒体
+156: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 传输层首部 5 H 数 据 5 5 4 H 4 H 5 数 据 4 3 3 3 2 2 2 2 1 1 1 1 物理传输媒体 物理传输媒体
+157: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 5 H 数 据 5 5 网络层首部 4 H 4 H 5 数 据 4 3 H H H 数 据 3 3 3 4 5 2 2 2 2 1 1 1 1 物理传输媒体 物理传输媒体
+158: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 5 H 数 据 5 5 4 H 4 H 5 数 据 4 链路层 链路层 3 首部 H H H 数 据 尾部 3 3 3 4 5 2 H H H H 数 据 T 2 2 2 2 3 4 5 2 1 1 1 1 物理传输媒体
+159: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 5 H 数 据 5 5 4 H 4 H 5 数 据 4 3 H H H 数 据 3 3 3 4 5 2 H H H H 数 据 T 2 2 2 2 3 4 5 2 1 10100 比特流 110100 1 1 1 物理传
+160: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 2 2 2 1 1 1 1 物物理理传传输输媒媒体体 物理传输媒体
+161: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 2 2 2 1 10100 比特流 110100 1 1 1 物物理理传传输输媒媒体体 物理传输媒体
+162: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 H H H H 数 据 T 2 2 2 2 3 4 5 2 1 10100 比特流 110100 1 1 1 物物理理传传输输媒媒体体 物理传输媒体
+163: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 H H H 数 据 3 3 3 4 5 2 H H H H 数 据 T 2 2 2 2 3 4 5 2 1 10100 比特流 110100 1 1 1 物物理理传传输输媒媒体体 物理传输媒体
+164: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 H H H 数 据 3 H H H 数 据 3 3 4 5 3 4 5 2 H H H H 数 据 T 2 2 2 2 3 4 5 2 1 10100 比特流 110100 1 1 1 物物理理传传输输媒媒体
+165: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 H H H 数 据 3 新首部 H H H 数 据 新尾部 3 3 4 5 3 4 5 2 H H H H 数 据 T 2 2 H H H H 数 据 T 2 2 3 4 5 2 2 3 4 5 2 1 10
+166: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 H H H 数 据 3 新首部 H H H 数 据 新尾部 3 3 4 5 3 4 5 2 H H H H 数 据 T 2 2 H H H H 数 据 T 2 2 3 4 5 2 2 3 4 5 2 1 10
+167: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 2 2 2 1 1 1 1 物物理理传传输输媒媒体体 物理传输媒体
+168: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 2 2 2 1 1 1 10101 比特流 110111 1 物物理理传传输输媒媒体体 物理传输媒体
+169: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 3 2 2 2 H H H H 数 据 T 2 2 3 4 5 2 1 1 1 10101 比特流 110111 1 物物理理传传输输媒媒体体 物理传输媒体
+170: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 4 3 3 H H H 数 据 3 3 4 5 2 2 2 H H H H 数 据 T 2 2 3 4 5 2 1 1 1 10101 比特流 110111 1 物物理理传传输输媒媒体体 物理传输媒体
+171: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 5 4 H 4 H 5 数 据 4 3 3 H H H 数 据 3 3 4 5 2 2 2 H H H H 数 据 T 2 2 3 4 5 2 1 1 1 10101 比特流 110111 1 物物理理传传输输媒媒体体 物理
+172: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP AP 1 2 5 H 数 据 5 5 4 H 4 H 5 数 据 4 3 3 H H H 数 据 3 3 4 5 2 2 2 H H H H 数 据 T 2 2 3 4 5 2 1 1 1 10101 比特流 110111 1 物物理理传传输
+173: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 AP 1 2 5 H 数 据 5 5 4 H 4 H 5 数 据 4 3 3 H H H 数 据 3 3 4 5 2 2 2 H H H H 数 据 T 2 2 3 4 5 2 1 1 1 10101 比特流 110111 1 物物理
+174: 服务、分层和封装 数据在各层之间的传递过程 主机 1 路由器 主机 2 AP 数 据 数 据 AP 1 2 5 H 数 据 H 数 据 5 5 5 4 H 4 H 5 数 据 H 4 H 5 数 据 4 3 H H H 数 据 3 H H H 数 据 3 3 4 5 3 4 5 2 H H H H 数 据 T 2 2 
+175: 封装：端到端视图 source message M application segment HH tt M transport datagram HH nn H t M network frame H l H n H t M link physical link physical switch destination 
+176: 各层次的协议数据单元 Ø 应用层：报文(message) Ø 传输层：报文段(segment) Ø 网络层：数据报 datagram)/分组(packet)数据链 路层：帧(frame) Ø 物理层：位(bit)
+177: 第一章 计算机网络概述 什 么 是 1 . 1 Internet? 网络边缘 1.2 网络核心 1.3 接入网和物理媒体 1.4 结 构 和 1 . 5 Internet ISP 分组延时、丢失和吞吐量 1.6 协议层次及服务模型 1.7 历史 1.8
+178: 因特网简史 早期的分组交换原理 1961-1972: v 1961: Kleinrock – 使用排队论证 明分组交换网络在数据通信方面 的优越性 v 1964: Baran – 在军用网络中实 现分组交换 v 1967: DARPA 构思了 ARPAnet v 1972: v 1969: 首个 ARPAnet 结点运
+179: 因特网简史 网络互连 新型和厂商网络 1972-1980: , v 1970: ALOHAnet 无线及卫星网 Cerf 和 Kahn’s 网络互连的原则 : 络 , Hawaii § 极简主义、自主性 - 无需内部 v 1973: Metcalfe 在其博士论文中 更改即可互连网络 建议了 Ethernet 尽力而为
+180: 《 》 A Protocol for Packet Network Intercommunication 极简主义与自主性 1. (Minimalism & Autonomy) 核心理念：网络互连层（即后来的 层）的设计应尽可能简单，不对底层网络技术做 • IP 过多假设，也不要求底层网络为了互连而进行内部修改。 无需
+181: 无状态路由器 3. (Stateless Routers) 核心理念：网络中的中间节点（路由器）不需要维护关于正在通过它的数据流（ ） Flow 的状态信息。独立处理：路由器对每个到达的数据包进行独立处理，仅根据数据包头部 的目的地址和当前的路由表进行转发决策。它不记录之前经过了哪些包，也不关心这个 包属于哪个会话或连
+182: 因特网简史 1980-1990:新协议,网络激增 § 1983:部署 TCP/IP § 新的全国性网络 : CSnet, BITnet, NSFnet, Minitel § 1982: smtp e-mail protocol defined § 100,000 台主机连接到公共英特 网络 § 1983: DNS de
+183: 因特网简史 商业化、网络、新应用 1990, 2000s: § early 1990s: ARPAnet 退役 late 1990s – 2000s: § 1991: NSF 取消对 NSFnet 商业用途的 § 更多杀手级应用：即时通讯， 文件共享 P2P 限制 (decommissioned, 1995) 网络安全
+184: 因特网简史 2005-present: scale, SDN, mobility, cloud § 积极部署宽带家庭接入（10-100 Mbps） 高速无线接入越来越普遍：4G/5G、WiFi § 2008: software-defined networking (SDN) 服务提供商（谷歌，FB，微软）创建自己的网
+185: 小结1 p 组成角度看 什么是互联网 覆盖大量的内容! 边缘：端系统(包括应用) + 接入网 • 口 Internet 核心： 网络交换设备+通信链路 • 口 什么是协议 协议：对等层实体通信过程中遵守 • 的规则的集合：语法，语义，时序 口 网络边缘，核心，接入网 口 从服务角度看互联网 络 通信服务基础设施 • 分
+186: 小结2 口 数据交换 分 组 数 据 交 换 • 电 路 交 换 • 口 比较 电路交换和分组交换 口 分组交换的2种方式 虚 电 路 • 数 据 报 • 口 接入网和物理媒介 接入网技术： • 住 宅 ： ADSL ， 拨 号 ， cable modem • 单位： 以太网 • 无线接入方式 • 物 理 媒 介：光纤
+187: 小结3 口 分组交换网络中延迟和丢失是如何发生的 延迟的组成：处理、排队、传输、传播 • 口 网络的分层体系结构 分层体系结构 • 服务 • 协议数据单元 • 封装与解封装 • 口历史
+188: 第一章课后作业 课后作业 ： 1 ， R1,R4,R11,R16,R18,R19,R23,R24,R25,P5,P6 P10 188 2026年3月31日星期二
+189: 作业提交方式： 用户名： 密码： lihai_std, std 提交到 上传区 》 计算机网络（软件工程） 》 “ ”— “ ”— 作业一 ，文件名取为：学号姓名作业一 或 “ ” .doc 。 docx
