@@ -457,4 +457,34 @@ DNS 会缓存查询结果，缓存有 TTL。
 | MX    | 邮件服务器记录      |
 | NS    | 指定域的权威DNS服务器 |
 
+#### 6.查询方式：递归查询 vs 迭代查询
 
+**递归查询**：  
+“你帮我查到底，最后直接把结果给我。”
+
+```
+主机 → 本地 DNS：请帮我查 www.example.com 的 IP
+本地 DNS 负责后续查询并把最终结果返回主机
+```
+
+**迭代查询**：  
+“我不知道最终答案，但告诉你下一步该问谁。”
+
+```
+本地 DNS → 根 DNS：问 www.example.com
+根 DNS → 返回 .com 顶级域 DNS 地址
+本地 DNS → .com TLD
+TLD → 返回 example.com 权威 DNS 地址
+本地 DNS → 权威 DNS
+权威 DNS → 返回 www.example.com 的 IP
+```
+
+考试常见完整流程：
+
+```
+主机向本地 DNS 发起递归查询
+本地 DNS 向根/TLD/权威 DNS 发起迭代查询
+最后本地 DNS 把 IP 地址返回主机
+```
+
+www.example.com的查询
