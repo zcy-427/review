@@ -252,3 +252,7 @@ If-Modified-Since
 4. 条件 GET 中未修改返回 **304 Not Modified**，不是 404。
 5. 对象已修改才返回 **200 OK + 新对象**。
 
+---
+
+## FTP
+
