@@ -487,4 +487,5 @@ TLD → 返回 example.com 权威 DNS 地址
 最后本地 DNS 把 IP 地址返回主机
 ```
 
-www.example.com的查询
+DNS 解析 `www.example.com` 的基本过程。
+
