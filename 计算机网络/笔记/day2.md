@@ -439,7 +439,7 @@ DNS 会缓存查询结果，缓存有 TTL。
 - 减轻 DNS 服务器负载
 - 减少网络流量
 
-**5. DNS 资源记录 RR**
+#### **5. DNS 资源记录 RR**
 
 格式：
 
@@ -487,5 +487,18 @@ TLD → 返回 example.com 权威 DNS 地址
 最后本地 DNS 把 IP 地址返回主机
 ```
 
-DNS 解析 `www.example.com` 的基本过程。
+#### 7.DNS 解析 `www.example.com` 的基本过程。
+
+1. 主机先查看本地缓存；若没有，向**本地 DNS 服务器**发起查询。
+2. 本地 DNS 服务器若无缓存，先向**根 DNS 服务器**查询。
+3. 根 DNS 服务器返回 `.com` 顶级域 DNS 服务器的地址。
+4. 本地 DNS 服务器再向 `.com` 顶级域 DNS 服务器查询。
+5. `.com` 顶级域 DNS 服务器返回 `example.com` 权威 DNS 服务器的地址。
+6. 本地 DNS 服务器再向 `example.com` 权威 DNS 服务器查询 `www.example.com`。
+7. 权威 DNS 服务器返回 `www.example.com` 对应的 IP 地址。
+8. 本地 DNS 服务器把 IP 地址返回给主机，并缓存该记录；主机随后使用该 IP 地址访问服务器。
+
+考试简洁版：
+> 主机向本地 DNS 查询；本地 DNS 依次向根 DNS、顶级域 DNS、权威 DNS 查询，最终获得 `www.example.com` 的 IP 地址，返回给主机并缓存结果。
+
 
