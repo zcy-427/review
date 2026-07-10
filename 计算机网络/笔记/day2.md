@@ -60,6 +60,7 @@ HTTP，即 HyperText Transfer Protocol，超文本传输协议，是 Web 的应�
 | 默认端口    | HTTP 80；HTTPS 常用 443     |
 | 无状态     | 服务器默认不保存客户端上一次请求状态       |
 
-#### 5.RRT的计算
+#### 5.RTT的计算
 
 RTT：一个小分组从客户端到服务器再返回客户端的往返时间。
+
