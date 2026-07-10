@@ -631,13 +631,13 @@ CDN：Content Distribution Network。
 **一句话说明**  
 套接字编程解决的是：**应用程序如何调用运输层服务来发送和接收数据。**
 
-**1. socket 是什么**
+#### **1. socket 是什么**
 
 > socket 是应用进程和运输层之间的软件接口。应用程序通过 socket 把数据交给 TCP 或 UDP，也通过 socket 接收来自网络的数据。
 
 注意：socket 不是协议。
 
-**2. UDP socket 通信流程**
+#### **2. UDP socket 通信流程**
 
 UDP 是无连接的。
 
@@ -658,7 +658,7 @@ UDP 是无连接的。
 - 不保证可靠、不保证按序
 - 开销小、时延低
 
-**3. TCP socket 通信流程**
+#### **3. TCP socket 通信流程**
 
 TCP 是面向连接的。
 
@@ -695,7 +695,7 @@ TCP 是面向连接的。
 |服务器 socket|一个 UDP socket 可接收多个客户端数据|需要欢迎 socket 和连接 socket|
 |适合|DNS、实时音视频|HTTP、FTP、SMTP|
 
-**4. TCP 的两个 socket**
+#### **4. TCP 的两个 socket**
 
 考试可能问：
 
