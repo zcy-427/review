@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "ecb95d34c1817028",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d804b970c3f51fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "584a88f9956435d8",
+            "type": "leaf",
+            "state": {
+              "type": "docx-view",
+              "state": {
+                "file": "参考毕业论文/毕业论文5.docx"
+              },
+              "icon": "lucide-file",
+              "title": "毕业论文5"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e534e780d9c1275f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ba00959e1bbd5e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1070176e30634ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a75a2421a6130c79",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c63f4dc390367065",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f233bb30ac77f13",
+    "type": "split",
+    "children": [
+      {
+        "id": "0437c0ae294ee82c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fd1bfe93461f185",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "论文阅读.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "2d2936d55ab38167",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "论文阅读.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "b701aabd02b7e4b1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "bfad40a090a68bc2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "da71b2a1f519bbbb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "论文阅读.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "584a88f9956435d8",
+  "lastOpenFiles": [
+    "参考毕业论文/毕业论文4.docx",
+    "参考毕业论文/毕业论文3.docx",
+    "参考毕业论文/毕业论文2.docx",
+    "课程要求/工程项目要求.jpg",
+    "课程要求/大目标方向.md",
+    "论文阅读.md",
+    "软件建模技术UML.md",
+    "软件过程.md",
+    "课件/Chapter_03-1软件过程模型.pdf",
+    "参考毕业论文/毕业论文5.docx",
+    "课程要求/课程成绩构成.jpg",
+    "参考论文/基于BiLSTM-CRF和Neo4j的脾胃病知识图谱构建.pdf",
+    "参考论文/药症方关联的中医药古籍交互可视分析方法.pdf",
+    "参考论文/融合古籍信息的中医药知识图谱推理研究_韩青.pdf",
+    "参考毕业论文/~$毕业论文1.doc",
+    "参考论文",
+    "课程要求/论文注意事项.md",
+    "assets/软件建模技术UML/file-20260904094057388.png",
+    "assets/软件建模技术UML/file-20260904094000572.jpg",
+    "assets/论文阅读/file-20260903153624871.jpg",
+    "assets/论文阅读/file-20260903153617879.jpg",
+    "IMG_20260903_153055.jpg",
+    "IMG_20260903_152200.jpg",
+    "欢迎.md"
+  ]
+}
