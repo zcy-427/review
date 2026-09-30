@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "ecb95d34c1817028",
+    "id": "cde46467facf38ce",
     "type": "split",
     "children": [
       {
-        "id": "3d804b970c3f51fd",
+        "id": "337d42c3641b2603",
         "type": "tabs",
         "children": [
           {
-            "id": "584a88f9956435d8",
+            "id": "4918d32cf44c1e70",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文阅读.md",
+                "file": "信息专家原则.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "论文阅读"
+              "title": "信息专家原则"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e534e780d9c1275f",
+    "id": "97c3141e38e5e52d",
     "type": "split",
     "children": [
       {
-        "id": "8ba00959e1bbd5e3",
+        "id": "6480691d9ee69805",
         "type": "tabs",
         "children": [
           {
-            "id": "b1070176e30634ce",
+            "id": "f4bb38bf114bfea1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +50,7 @@
             }
           },
           {
-            "id": "a75a2421a6130c79",
+            "id": "d917069acaba300c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +67,7 @@
             }
           },
           {
-            "id": "c63f4dc390367065",
+            "id": "52bdfa8df95d59fb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -86,20 +86,20 @@
     "width": 300
   },
   "right": {
-    "id": "7f233bb30ac77f13",
+    "id": "bb2896fb18572ec8",
     "type": "split",
     "children": [
       {
-        "id": "0437c0ae294ee82c",
+        "id": "1ddea0495297be26",
         "type": "tabs",
         "children": [
           {
-            "id": "6fd1bfe93461f185",
+            "id": "459d153265a61325",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "论文阅读.md",
+                "file": "信息专家原则.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,12 +113,12 @@
             }
           },
           {
-            "id": "2d2936d55ab38167",
+            "id": "42a96627ddc15d69",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "论文阅读.md",
+                "file": "信息专家原则.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -127,7 +127,7 @@
             }
           },
           {
-            "id": "b701aabd02b7e4b1",
+            "id": "f5e401f4059c6000",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,7 +142,7 @@
             }
           },
           {
-            "id": "bfad40a090a68bc2",
+            "id": "2427d9685eced4fb",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -156,12 +156,12 @@
             }
           },
           {
-            "id": "da71b2a1f519bbbb",
+            "id": "b257d9c83d0b5c51",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "论文阅读.md",
+                "file": "信息专家原则.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,32 +188,8 @@
       "bases:新建数据库": false
     }
   },
-  "active": "584a88f9956435d8",
+  "active": "4918d32cf44c1e70",
   "lastOpenFiles": [
-    "参考论文/基于BiLSTM-CRF和Neo4j的脾胃病知识图谱构建.pdf",
-    "参考论文/药症方关联的中医药古籍交互可视分析方法.pdf",
-    "参考论文/融合古籍信息的中医药知识图谱推理研究_韩青.pdf",
-    "课程要求/我的选题.md",
-    "课程要求/论文注意事项.md",
-    "课程要求/大目标方向.md",
-    "课程要求/工程项目要求.jpg",
-    "课程要求/课程成绩构成.jpg",
-    "课件/Chapter_01-3UML.pdf",
-    "课件/Chapter_03-1软件过程模型.pdf",
-    "参考毕业论文/毕业论文2.docx",
-    "参考毕业论文/毕业论文3.docx",
-    "参考毕业论文/~$毕业论文1.doc",
-    "参考毕业论文/毕业论文5.docx",
-    "参考毕业论文/毕业论文4.docx",
-    "论文阅读.md",
-    "软件建模技术UML.md",
-    "软件过程.md",
-    "assets/软件建模技术UML/file-20260904094057388.png",
-    "assets/软件建模技术UML/file-20260904094000572.jpg",
-    "assets/论文阅读/file-20260903153624871.jpg",
-    "assets/论文阅读/file-20260903153617879.jpg",
-    "IMG_20260903_153055.jpg",
-    "IMG_20260903_152200.jpg",
-    "欢迎.md"
+    "信息专家原则.md"
   ]
 }
