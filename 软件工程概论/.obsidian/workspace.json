@@ -4,21 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "3d804b970c3f51fd",
+        "id": "65964ac247d07cf2",
         "type": "tabs",
         "children": [
           {
-            "id": "584a88f9956435d8",
+            "id": "6a2a128ea127c3e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文阅读.md",
-                "mode": "source",
+                "file": "chapter1_introduction.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "论文阅读"
+              "title": "chapter1_introduction"
+            }
+          },
+          {
+            "id": "3198d01dbda62053",
+            "type": "leaf",
+            "state": {
+              "type": "docx-view",
+              "state": {
+                "file": "参考毕业论文/毕业论文2.docx"
+              },
+              "icon": "lucide-file",
+              "title": "毕业论文2"
             }
           }
         ]
@@ -188,24 +200,25 @@
       "bases:新建数据库": false
     }
   },
-  "active": "584a88f9956435d8",
+  "active": "6a2a128ea127c3e6",
   "lastOpenFiles": [
+    "参考毕业论文/毕业论文5.docx",
+    "chapter1_introduction.md",
+    "课程要求/课程成绩构成.jpg",
+    "课程要求/工程项目要求.jpg",
+    "参考毕业论文/毕业论文4.docx",
+    "参考毕业论文/毕业论文2.docx",
+    "参考毕业论文/毕业论文3.docx",
+    "论文阅读.md",
     "参考论文/基于BiLSTM-CRF和Neo4j的脾胃病知识图谱构建.pdf",
     "参考论文/药症方关联的中医药古籍交互可视分析方法.pdf",
     "参考论文/融合古籍信息的中医药知识图谱推理研究_韩青.pdf",
     "课程要求/我的选题.md",
     "课程要求/论文注意事项.md",
     "课程要求/大目标方向.md",
-    "课程要求/工程项目要求.jpg",
-    "课程要求/课程成绩构成.jpg",
     "课件/Chapter_01-3UML.pdf",
     "课件/Chapter_03-1软件过程模型.pdf",
-    "参考毕业论文/毕业论文2.docx",
-    "参考毕业论文/毕业论文3.docx",
     "参考毕业论文/~$毕业论文1.doc",
-    "参考毕业论文/毕业论文5.docx",
-    "参考毕业论文/毕业论文4.docx",
-    "论文阅读.md",
     "软件建模技术UML.md",
     "软件过程.md",
     "assets/软件建模技术UML/file-20260904094057388.png",
