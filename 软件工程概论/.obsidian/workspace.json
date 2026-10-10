@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "65964ac247d07cf2",
+        "id": "1fa5f0bcdfbd96ae",
         "type": "tabs",
         "children": [
           {
-            "id": "3198d01dbda62053",
+            "id": "bd0f3d4f38cfe1fc",
             "type": "leaf",
             "state": {
-              "type": "docx-view",
+              "type": "pdf",
               "state": {
-                "file": "参考毕业论文/毕业论文2.docx"
+                "file": "课件/Chapter_02-2需求工程new.pdf"
               },
-              "icon": "lucide-file",
-              "title": "毕业论文2"
+              "icon": "lucide-file-text",
+              "title": "Chapter_02-2需求工程new"
             }
           }
         ]
@@ -186,27 +186,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b1070176e30634ce",
+  "active": "bd0f3d4f38cfe1fc",
   "lastOpenFiles": [
-    "参考毕业论文/毕业论文5.docx",
-    "chapter1_introduction.md",
-    "课程要求/课程成绩构成.jpg",
-    "课程要求/工程项目要求.jpg",
-    "参考毕业论文/毕业论文4.docx",
+    "课件/Chapter_03-1软件过程模型.pdf",
+    "课件/Chapter_02-2需求工程new.pdf",
+    "课件/d381a8ddea7d32fcea8149a7499a99f2.par.temp",
     "参考毕业论文/毕业论文2.docx",
     "参考毕业论文/毕业论文3.docx",
+    "参考毕业论文/毕业论文4.docx",
+    "课程要求/需求.md",
+    "课件/Chapter_01-3UML.pdf",
+    "软件过程.md",
     "论文阅读.md",
+    "课程要求/课程成绩构成.jpg",
+    "课程要求/论文注意事项.md",
+    "课程要求/我的选题.md",
+    "课程要求/工程项目要求.jpg",
+    "课程要求/大目标方向.md",
+    "参考毕业论文/~$毕业论文1.doc",
+    "参考毕业论文/毕业论文5.docx",
+    "chapter1_introduction.md",
     "参考论文/基于BiLSTM-CRF和Neo4j的脾胃病知识图谱构建.pdf",
     "参考论文/药症方关联的中医药古籍交互可视分析方法.pdf",
-    "参考论文/融合古籍信息的中医药知识图谱推理研究_韩青.pdf",
-    "课程要求/我的选题.md",
-    "课程要求/论文注意事项.md",
-    "课程要求/大目标方向.md",
-    "课件/Chapter_01-3UML.pdf",
-    "课件/Chapter_03-1软件过程模型.pdf",
-    "参考毕业论文/~$毕业论文1.doc",
     "软件建模技术UML.md",
-    "软件过程.md",
     "assets/软件建模技术UML/file-20260904094057388.png",
     "assets/软件建模技术UML/file-20260904094000572.jpg",
     "assets/论文阅读/file-20260903153624871.jpg",
