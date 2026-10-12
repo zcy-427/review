@@ -11,12 +11,12 @@
             "id": "bd0f3d4f38cfe1fc",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "docx-view",
               "state": {
-                "file": "课件/Chapter_02-2需求工程new.pdf"
+                "file": "参考毕业论文/毕业论文4.docx"
               },
-              "icon": "lucide-file-text",
-              "title": "Chapter_02-2需求工程new"
+              "icon": "lucide-file",
+              "title": "毕业论文4"
             }
           }
         ]
@@ -188,11 +188,11 @@
   },
   "active": "bd0f3d4f38cfe1fc",
   "lastOpenFiles": [
-    "课件/Chapter_03-1软件过程模型.pdf",
-    "课件/Chapter_02-2需求工程new.pdf",
-    "课件/d381a8ddea7d32fcea8149a7499a99f2.par.temp",
-    "参考毕业论文/毕业论文2.docx",
     "参考毕业论文/毕业论文3.docx",
+    "参考毕业论文/毕业论文2.docx",
+    "课件/Chapter_02-2需求工程new.pdf",
+    "课件/Chapter_03-1软件过程模型.pdf",
+    "课件/d381a8ddea7d32fcea8149a7499a99f2.par.temp",
     "参考毕业论文/毕业论文4.docx",
     "课程要求/需求.md",
     "课件/Chapter_01-3UML.pdf",
