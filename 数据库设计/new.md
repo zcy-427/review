@@ -33,4 +33,4 @@ denormalization（反规范化）：
 
 **Partitioning table**![](assets/new/file-20261028105528970.jpg)
 - Horizontal:
-- Vertical:
+- Vertical:表结构不一致，增加一次IO能检索的数据条数
