@@ -32,3 +32,5 @@ denormalization（反规范化）：
 - 要考虑读写比例
 
 **Partitioning table**
+- Horizontal:
+- Vertical:
