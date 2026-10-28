@@ -31,6 +31,6 @@ denormalization（反规范化）：
 - 反规范化要适度
 - 要考虑读写比例
 
-**Partitioning table**
+**Partitioning table**![](assets/new/file-20261028105528970.jpg)
 - Horizontal:
 - Vertical:
