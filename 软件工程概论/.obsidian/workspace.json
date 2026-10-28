@@ -87,24 +87,22 @@
             "id": "bd7e6d05172231f0",
             "type": "leaf",
             "state": {
-              "type": "docx-view",
-              "state": {
-                "file": "参考毕业论文/毕业论文4.docx"
-              },
-              "icon": "lucide-file",
-              "title": "毕业论文4"
-            }
-          },
-          {
-            "id": "480dfbc9350442aa",
-            "type": "leaf",
-            "state": {
               "type": "pdf",
               "state": {
                 "file": "课件/Chapter_01-3UML.pdf"
               },
               "icon": "lucide-file-text",
               "title": "Chapter_01-3UML"
+            }
+          },
+          {
+            "id": "2f0107adb270a3d9",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ],
@@ -275,26 +273,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "480dfbc9350442aa",
+  "active": "2f0107adb270a3d9",
   "lastOpenFiles": [
-    "软件建模技术UML.md",
-    "论文格式.md",
     "课程要求/需求.md",
-    "课程要求/我的选题.md",
-    "课程要求/论文注意事项.md",
+    "软件建模技术UML.md",
+    "课件/Chapter_01-3UML.pdf",
+    "课件/Chapter_02-2需求工程new.pdf",
+    "课件/Chapter_03-1软件过程模型.pdf",
+    "系统需求分析.md",
+    "参考毕业论文/毕业论文4.docx",
+    "参考毕业论文/毕业论文2.docx",
     "参考毕业论文/~$毕业论文1.doc",
     "参考毕业论文/~$毕业论文3.docx",
     "参考毕业论文/~$毕业论文2.docx",
+    "参考毕业论文/~$毕业论文4.docx",
+    "参考毕业论文/~$毕业论文5.docx",
+    "课程要求/论文注意事项.md",
+    "课程要求/我的选题.md",
     "课程要求/课程成绩构成.jpg",
     "课程要求/工程项目要求.jpg",
-    "系统需求分析.md",
-    "参考毕业论文/毕业论文2.docx",
-    "参考毕业论文/毕业论文3.docx",
-    "参考毕业论文/毕业论文4~660B0.tmp",
-    "参考毕业论文/~$毕业论文5.docx",
-    "参考毕业论文/毕业论文4.docx",
-    "参考毕业论文/~$毕业论文4.docx",
-    "参考毕业论文/毕业论文5.docx",
+    "课程要求/大目标方向.md",
+    "软件过程.md",
+    "论文阅读.md",
+    "论文格式.md",
     "assets/论文格式/file-20261019113536217.png",
     "assets/论文格式/file-20261019113515723.png",
     "assets/论文格式/file-20261019113412450.png",
@@ -303,9 +304,6 @@
     "assets/论文格式/file-20261019113252072.png",
     "assets/论文格式/file-20261019113227859.png",
     "assets/论文格式/file-20261019113153747.png",
-    "软件过程.md",
-    "论文阅读.md",
-    "课程要求/大目标方向.md",
     "chapter1_introduction.md",
     "欢迎.md"
   ]
