@@ -30,3 +30,5 @@ BCNF:不存在非键字段确定主键的一部分
 denormalization（反规范化）：
 - 反规范化要适度
 - 要考虑读写比例
+
+**Partitioning table**
