@@ -35,3 +35,5 @@ denormalization（反规范化）：
 
 - Horizontal:表的记录根据业务逻辑分开存储，减少顺序扫描时的
 - Vertical:表结构不一致，增加一次IO能检索的数据条数
+优缺点：
+![](assets/new/file-20261028111340040.jpg)
