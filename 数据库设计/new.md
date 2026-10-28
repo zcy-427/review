@@ -1,3 +1,4 @@
+<img src="./images/demo.png" width="300" height="200">
 2NF:不存在主键的一部分决定其他非键字段
 
 3NF:不存在非键字段确定其他非键字段
