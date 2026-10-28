@@ -32,7 +32,7 @@ denormalization（反规范化）：
 - 要考虑读写比例
 
 **Partitioning table**
-![](assets/new/file-20261028105528970.jpg)
+![[assets/new/file-20261028105528970.jpg|400]]
 
 - Horizontal:表的记录根据业务逻辑分开存储，减少顺序扫描时的
 - Vertical:表结构不一致，增加一次IO能检索的数据条数
