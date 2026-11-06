@@ -99,14 +99,12 @@
             "id": "2f0107adb270a3d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "课程要求/需求.md",
-                "mode": "source",
-                "source": false
+                "file": "课件/Chapter_01-3UML.pdf"
               },
-              "icon": "lucide-file",
-              "title": "需求"
+              "icon": "lucide-file-text",
+              "title": "Chapter_01-3UML"
             }
           }
         ],
@@ -279,8 +277,8 @@
   },
   "active": "2f0107adb270a3d9",
   "lastOpenFiles": [
-    "系统需求分析.md",
     "课程要求/需求.md",
+    "系统需求分析.md",
     "软件建模技术UML.md",
     "课件/Chapter_01-3UML.pdf",
     "课件/Chapter_02-2需求工程new.pdf",
