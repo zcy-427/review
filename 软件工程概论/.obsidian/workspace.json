@@ -99,10 +99,14 @@
             "id": "2f0107adb270a3d9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "课程要求/需求.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "需求"
             }
           }
         ],
@@ -275,12 +279,12 @@
   },
   "active": "2f0107adb270a3d9",
   "lastOpenFiles": [
+    "系统需求分析.md",
     "课程要求/需求.md",
     "软件建模技术UML.md",
     "课件/Chapter_01-3UML.pdf",
     "课件/Chapter_02-2需求工程new.pdf",
     "课件/Chapter_03-1软件过程模型.pdf",
-    "系统需求分析.md",
     "参考毕业论文/毕业论文4.docx",
     "参考毕业论文/毕业论文2.docx",
     "参考毕业论文/~$毕业论文1.doc",
