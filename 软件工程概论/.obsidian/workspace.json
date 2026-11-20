@@ -11,12 +11,14 @@
             "id": "5771fb6b4dd0e5a7",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "课件/Chapter_01-3UML.pdf"
+                "file": "软件架构.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Chapter_01-3UML"
+              "icon": "lucide-file",
+              "title": "软件架构"
             }
           }
         ]
@@ -188,11 +190,13 @@
   },
   "active": "5771fb6b4dd0e5a7",
   "lastOpenFiles": [
+    "论文阅读.md",
+    "论文格式.md",
+    "课件/Chapter_01-3UML.pdf",
     "参考毕业论文/~$毕业论文4.docx",
     "第4章.md",
     "软件架构.md",
     "课程要求/大目标方向.md",
-    "课件/Chapter_01-3UML.pdf",
     "参考毕业论文/毕业论文2.docx",
     "软件建模技术UML.md",
     "课件/Chapter_02-2需求工程new.pdf",
@@ -201,8 +205,6 @@
     "assets/第4章/file-20261112151751108.jpg",
     "assets/第4章",
     "软件过程.md",
-    "论文阅读.md",
-    "论文格式.md",
     "课程要求/课程成绩构成.jpg",
     "课程要求/工程项目要求.jpg",
     "课程要求/论文注意事项.md",
